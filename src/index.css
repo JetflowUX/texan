@@ -1,0 +1,86 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --color-primary: #010d67;
+  --color-primary-container: #1e297b;
+  --color-on-primary: #ffffff;
+  --color-secondary: #bb0024;
+  --color-secondary-container: #e31f35;
+  --color-on-secondary: #ffffff;
+  --color-surface: #f7f9fb;
+  --color-surface-container: #eceef0;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #454651;
+  --color-outline: #767682;
+  --color-outline-variant: #c6c5d3;
+  --color-tertiary: #1e1e1e;
+  --color-tertiary-container: #333333;
+}
+* {
+  font-family: 'Manrope', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Utility classes */
+.container-custom {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+/* Button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background-color: #e31f35;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #bb0024;
+  box-shadow: 0px 4px 20px rgba(30, 41, 123, 0.08);
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background-color: transparent;
+  color: #010d67;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #010d67;
+  transition: all 0.2s ease;
+}
+.btn-secondary:hover {
+  background-color: #010d67;
+  color: #ffffff;
+}
