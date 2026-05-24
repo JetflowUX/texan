@@ -1,18 +1,19 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Map } from 'lucide-react';
-import serviceAreasImage from '../assets/service-areas.svg';
+import React from "react";
+import { motion } from "framer-motion";
+import { Map } from "lucide-react";
+import serviceAreasImage from "../assets/78499.jpg";
 const areas = [
-'Fort Worth',
-'Arlington',
-'Keller',
-'Southlake',
-'Grapevine',
-'Colleyville',
-'Bedford',
-'Hurst',
-'Euless',
-'North Richland Hills'];
+  "Fort Worth",
+  "Arlington",
+  "Keller",
+  "Southlake",
+  "Grapevine",
+  "Colleyville",
+  "Bedford",
+  "Hurst",
+  "Euless",
+  "North Richland Hills",
+];
 
 export function ServiceAreas() {
   return (
@@ -22,20 +23,20 @@ export function ServiceAreas() {
           <motion.div
             initial={{
               opacity: 0,
-              x: -20
+              x: -20,
             }}
             whileInView={{
               opacity: 1,
-              x: 0
+              x: 0,
             }}
             viewport={{
-              once: true
+              once: true,
             }}
             transition={{
-              duration: 0.6
+              duration: 0.6,
             }}
-            className="lg:w-1/2">
-            
+            className="lg:w-1/2"
+          >
             <div className="inline-flex items-center justify-center p-3 bg-primary-light/20 text-primary rounded-xl mb-6">
               <Map size={28} />
             </div>
@@ -49,45 +50,46 @@ export function ServiceAreas() {
             </p>
 
             <div className="flex flex-wrap gap-3">
-              {areas.map((area, index) =>
-              <span
-                key={index}
-                className="px-4 py-2 bg-chip text-primary font-bold text-sm rounded-full border border-primary-light/30">
-                
+              {areas.map((area, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 bg-chip text-primary font-bold text-sm rounded-full border border-primary-light/30"
+                >
                   {area}
                 </span>
-              )}
+              ))}
             </div>
           </motion.div>
 
           <motion.div
             initial={{
               opacity: 0,
-              x: 20
+              x: 20,
             }}
             whileInView={{
               opacity: 1,
-              x: 0
+              x: 0,
             }}
             viewport={{
-              once: true
+              once: true,
             }}
             transition={{
-              duration: 0.6
+              duration: 0.6,
             }}
-            className="lg:w-1/2 w-full">
-            
+            className="lg:w-1/2 w-full"
+          >
             <div className="relative rounded-xl overflow-hidden shadow-level-2 aspect-video lg:aspect-square max-h-[500px]">
               <img
                 src={serviceAreasImage}
-                alt="Stylized Tarrant County skyline and route map"
-                className="w-full h-full object-cover" />
-              
+                alt="HVAC technicians installing an outdoor unit"
+                className="w-full h-full object-cover"
+              />
+
               <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
             </div>
           </motion.div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }
