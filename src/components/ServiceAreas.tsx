@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Map } from 'lucide-react';
+import serviceAreasImage from '../assets/service-areas.svg';
 const areas = [
 'Fort Worth',
 'Arlington',
@@ -78,8 +79,8 @@ export function ServiceAreas() {
             
             <div className="relative rounded-xl overflow-hidden shadow-level-2 aspect-video lg:aspect-square max-h-[500px]">
               <img
-                src="https://images.unsplash.com/photo-1572204292164-b35ba08f85d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Fort Worth skyline"
+                src={serviceAreasImage}
+                alt="Stylized Tarrant County skyline and route map"
                 className="w-full h-full object-cover" />
               
               <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
