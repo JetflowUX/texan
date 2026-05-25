@@ -55,7 +55,7 @@ export function Hero() {
             }}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-[1.1] mb-6">
             
-            Fort Worth's Most Trusted{' '}
+            CLD Fort Worth's Most Trusted{' '}
             <span className="text-secondary">AC & Heating</span> Experts
           </motion.h1>
 
